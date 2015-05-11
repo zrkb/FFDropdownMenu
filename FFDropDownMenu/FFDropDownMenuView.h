@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FFDropdownMenuData.h"
 
 extern NSString * const kTitleDictionaryKey;
 extern NSString * const kValueDictionaryKey;
@@ -33,7 +34,7 @@ extern NSString * const kValueDictionaryKey;
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) NSString *value;
 
-- (void)setDataForPickerView:(NSDictionary *)pickerDataCollection;
+- (void)setDataForPickerView:(NSArray *)pickerDataCollection;
 - (NSString *)selectedValue;
 
 @end

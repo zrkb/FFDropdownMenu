@@ -1,0 +1,10 @@
+PODS:
+  - RMPickerViewController (1.3.3)
+
+DEPENDENCIES:
+  - RMPickerViewController (~> 1.3.3)
+
+SPEC CHECKSUMS:
+  RMPickerViewController: 1a64e211e86ac3d961214c9c376de7c0241ac25b
+
+COCOAPODS: 0.36.3

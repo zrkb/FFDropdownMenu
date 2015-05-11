@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96900434CFB05A5AA09B8233 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243823584E18A93ED4C3898C /* libPods.a */; };
 		DCA5E5E11B00F920000BCC1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA5E5E01B00F920000BCC1D /* main.m */; };
 		DCA5E5E41B00F920000BCC1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA5E5E31B00F920000BCC1D /* AppDelegate.m */; };
 		DCA5E5E71B00F920000BCC1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA5E5E61B00F920000BCC1D /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		243823584E18A93ED4C3898C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB045AF9C16F56D6FCAA291 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DCA5E5DB1B00F920000BCC1D /* FFDropDownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFDropDownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA5E5DF1B00F920000BCC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA5E5E01B00F920000BCC1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		DCA5E6061B00F94C000BCC1D /* FFDropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFDropDownMenuView.m; sourceTree = "<group>"; };
 		DCA5E6081B00F969000BCC1D /* FFDropDownMenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFDropDownMenuData.h; sourceTree = "<group>"; };
 		DCA5E6091B00F969000BCC1D /* FFDropDownMenuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFDropDownMenuData.m; sourceTree = "<group>"; };
+		E9E74CF66D77CA6C911970A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96900434CFB05A5AA09B8233 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042EA9D764F9F2BACB8F0DDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9E74CF66D77CA6C911970A7 /* Pods.debug.xcconfig */,
+				7BB045AF9C16F56D6FCAA291 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5941704B6AAAC6A4B2655D80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				243823584E18A93ED4C3898C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCA5E5D21B00F920000BCC1D = {
 			isa = PBXGroup;
 			children = (
 				DCA5E5DD1B00F920000BCC1D /* FFDropDownMenu */,
 				DCA5E5F71B00F920000BCC1D /* FFDropDownMenuTests */,
 				DCA5E5DC1B00F920000BCC1D /* Products */,
+				042EA9D764F9F2BACB8F0DDE /* Pods */,
+				5941704B6AAAC6A4B2655D80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +153,10 @@
 		DCA5E6041B00F925000BCC1D /* FFDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				DCA5E6051B00F94C000BCC1D /* FFDropDownMenuView.h */,
-				DCA5E6061B00F94C000BCC1D /* FFDropDownMenuView.m */,
 				DCA5E6081B00F969000BCC1D /* FFDropDownMenuData.h */,
 				DCA5E6091B00F969000BCC1D /* FFDropDownMenuData.m */,
+				DCA5E6051B00F94C000BCC1D /* FFDropDownMenuView.h */,
+				DCA5E6061B00F94C000BCC1D /* FFDropDownMenuView.m */,
 			);
 			name = FFDropDownMenu;
 			sourceTree = "<group>";
@@ -144,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA5E5FE1B00F920000BCC1D /* Build configuration list for PBXNativeTarget "FFDropDownMenu" */;
 			buildPhases = (
+				F09F8AD2BF897A00E8178AA3 /* Check Pods Manifest.lock */,
 				DCA5E5D71B00F920000BCC1D /* Sources */,
 				DCA5E5D81B00F920000BCC1D /* Frameworks */,
 				DCA5E5D91B00F920000BCC1D /* Resources */,
+				16CE34240CA1DB4DAC0C24BE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +257,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CE34240CA1DB4DAC0C24BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09F8AD2BF897A00E8178AA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCA5E5D71B00F920000BCC1D /* Sources */ = {
@@ -365,6 +424,7 @@
 		};
 		DCA5E5FF1B00F920000BCC1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E74CF66D77CA6C911970A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FFDropDownMenu/Info.plist;
@@ -375,6 +435,7 @@
 		};
 		DCA5E6001B00F920000BCC1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB045AF9C16F56D6FCAA291 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FFDropDownMenu/Info.plist;
@@ -436,6 +497,7 @@
 				DCA5E6001B00F920000BCC1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCA5E6011B00F920000BCC1D /* Build configuration list for PBXNativeTarget "FFDropDownMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +506,7 @@
 				DCA5E6031B00F920000BCC1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

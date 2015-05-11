@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pay-yH-Wy6" customClass="FFDropDownMenuView">
+                                <rect key="frame" x="16" y="269" width="568" height="62"/>
+                                <color key="backgroundColor" red="1" green="0.43649773850000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="dfU-k7-l2G"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBC-RR-6qd">
+                                <rect key="frame" x="16" y="518" width="568" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="EDG-Je-L9e"/>
+                                </constraints>
+                                <state key="normal" title="Obtener Valores">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSelectedOption:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ifq-mz-Ct1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CBC-RR-6qd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="32D-lM-q1I"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CBC-RR-6qd" secondAttribute="bottom" constant="20" id="CHA-zr-nez"/>
+                            <constraint firstAttribute="centerY" secondItem="pay-yH-Wy6" secondAttribute="centerY" id="Lj6-ND-f2g"/>
+                            <constraint firstAttribute="trailing" secondItem="CBC-RR-6qd" secondAttribute="trailing" constant="16" id="SGg-hE-JuV"/>
+                            <constraint firstItem="pay-yH-Wy6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="cFT-4s-LpK"/>
+                            <constraint firstAttribute="trailing" secondItem="pay-yH-Wy6" secondAttribute="trailing" constant="16" id="ln7-bE-8Yc"/>
+                            <constraint firstAttribute="centerX" secondItem="pay-yH-Wy6" secondAttribute="centerX" id="t7d-CT-YWv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myDropdown" destination="pay-yH-Wy6" id="rKw-QQ-JDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
